@@ -1,0 +1,76 @@
+.excelmain {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 80px;
+}
+
+.excelmain h1 {
+    color: #127C44;
+    font-weight: 600;
+}
+
+.butt #test-table-xls-button {
+    border-radius: 10px;
+    color: #127C44;
+    border: 1px solid black;
+    margin-left: 92%;
+    margin-bottom: 25px;
+    width: 100px;
+    height: 40px;
+}
+
+.butt #test-table-xls-button:hover {
+    border: none;
+    color: white;
+    background-color: rgb(11, 154, 54);
+}
+
+.exceltable table {
+    overflow: hidden;
+    display: inline-block;
+}
+
+.exceltable table td,
+.exceltable table th {
+    border: 1px solid #999;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+.exceltable table thead th {
+    background-color: rgb(88, 71, 166);
+    color: #eee;
+}
+
+
+.exceltable table td:hover::before {
+    background-color: rgb(199, 211, 254);;
+    content: '';
+    height: 100%;
+    left: -5000px;
+    position: absolute;
+    top: 0;
+    width: 10000px;
+    z-index: -2;
+}
+
+.exceltable table tr td:hover {background-color: rgb(255, 194, 89);}
+
+.exceltable table td:hover::after {
+    background-color: #ffa;
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
+
+.exceltable table tr th.tdk{
+    background-color: blueviolet;
+    color: white;
+}
+
+
+

@@ -1,0 +1,48 @@
+.box-billing{
+    flex-wrap: nowrap;   
+}
+
+.header p{
+    margin-top: 5rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #a14fff;
+    text-shadow: 1px 2px 1px gray;
+}
+.productname select {
+    text-align-last: center;
+}
+.option_box select{ 
+    margin-left: 30rem;
+    border-radius: 10rem;
+    height: 5rem;
+    width: 35rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.side_box select{
+    border-radius: 8px;
+    font-size: 1.5rem;
+    margin-left:5rem;
+    margin-top: .7rem;
+}
+.side_box{
+    margin-left: -50px;
+    text-align: center;
+}
+.contain3{
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+  
+}
+
+.timebox select{
+    padding: 4px 4rem;
+    margin-left: 40rem;
+    display: flex;
+}
+
+.productname select{
+    padding: 4px 10rem;
+}

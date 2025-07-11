@@ -1,0 +1,114 @@
+.assign {
+    display: flex;
+    height: 100vh;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.formstyle {
+    width: 65%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(211, 223, 243);
+}
+
+.nam {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(215, 238, 250);
+}
+
+.nam span {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #5294E2;
+}
+
+.part {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 1.2rem;
+}
+
+.part .sel {
+    margin-left: 50px;
+}
+
+.part .dat {
+    margin-left: 50px;
+}
+
+.sel select {
+    width: 80%;
+    padding: 7px;
+    border-radius: 8px;
+    font-weight: 400;
+}
+
+.dat input {
+    width: 80%;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: 7px;
+    font-weight: 400;
+}
+
+.part .met {
+    margin-left: 50px;
+}
+
+.part .mets {
+    margin-left: 50px;
+}
+
+.part .mets .radio_button {
+    font-size: 20px;
+}
+
+.part .mets .radio_button input {
+    margin: 0 20px 0 20px;
+}
+
+.met input {
+    width: 80%;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding-left: 4px;
+    padding: 7px;
+    font-weight: 400;
+}
+
+
+.wrapbtn {
+    text-align: center;
+   margin-bottom: 30px;
+}
+
+.button {
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-right: 130px;
+    min-width: 200px;
+    height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(90deg, #5294E2 0%, #5294E2 100%);
+    border: none;
+    border-radius: 100px;
+    box-shadow:  0px 5px 10px 0px rgba(62, 143, 243, 0.7);
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.button:hover{
+    transform: translateY(1px);
+    box-shadow:  0px 10px 15px 2px rgba(45, 137, 250, 0.7);
+}

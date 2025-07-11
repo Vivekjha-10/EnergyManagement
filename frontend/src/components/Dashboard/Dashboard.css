@@ -1,0 +1,617 @@
+.text {
+    margin-top: 5.5rem;
+    color: #3684c3;
+    text-shadow: 0px 1px 1px rgb(240, 189, 189);
+    margin-bottom: 1rem;
+}
+
+/* ###################### Card ##################### */
+.card h2,
+.card1 h2 {
+    margin-left: .4rem;
+    font-weight: 600;
+}
+
+.wrap {
+    align-items: center;
+    display: flex;
+    margin-left: 8rem;
+    font-weight: 600;
+}
+
+.wrap1 {
+    align-items: center;
+    display: flex;
+    margin-left: 8.2rem;
+    font-weight: 600;
+}
+
+.wrap h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+.wrap1 h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+.flexcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1 {
+    box-shadow: none;
+    background-image: none;
+    width: 32%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(103, 43, 223);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+}
+
+.card1::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: rgb(69, 39, 160);
+    border-radius: 50%;
+    top: -110px;
+    right: 0px;
+    opacity: 0.5;
+}
+
+.card1::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgb(69, 39, 160);
+    border-radius: 50%;
+    top: -120px;
+    right: -120px;
+}
+
+.card2 {
+    box-shadow: none;
+    background-image: none;
+    width: 32%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(30, 136, 229);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+}
+
+.card2::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: rgb(26, 119, 210);
+    border-radius: 50%;
+    top: -110px;
+    right: 0px;
+    opacity: 0.5;
+}
+
+.card2::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgb(21, 101, 192);
+    border-radius: 50%;
+    top: -120px;
+    right: -120px;
+}
+
+
+.card3 {
+    box-shadow: none;
+    background-image: none;
+    width: 32%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(245, 95, 84);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+}
+
+.card3::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: rgb(235, 54, 41);
+    border-radius: 50%;
+    top: -110px;
+    right: 0px;
+    opacity: 0.5;
+}
+
+.card3::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgb(232, 46, 33);
+    border-radius: 50%;
+    top: -120px;
+    right: -120px;
+}
+
+.main-title {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(69, 39, 160);
+    border-radius: 15px;
+}
+
+.icon h3,
+.icon1 h3,
+.icon2 h3,
+.icon4 h3,
+.icon5 h3,
+.icon6 h3,
+.sicon h3,
+.sicon1 h3 {
+    text-align: center;
+}
+
+.title {
+    margin-top: 4px;
+}
+
+.icon1 {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(21, 101, 192);
+    border-radius: 15px;
+}
+
+.icon2 {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(216, 58, 47);
+    border-radius: 15px;
+}
+
+.flexcontainers {
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cards4 {
+    margin-right: 1.5rem;
+    box-shadow: none;
+    width: 475px;
+    background-image: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 200, 83);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+}
+
+.cards4::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: rgb(3, 151, 65);
+    border-radius: 50%;
+    top: -110px;
+    right: 0px;
+    opacity: 0.5;
+}
+
+.cards4::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgb(3, 151, 65);
+    border-radius: 50%;
+    top: -120px;
+    right: -120px;
+}
+
+.icon4 {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(3, 151, 65);
+    border-radius: 15px;
+}
+
+
+.cards5 {
+    margin-right: 1.5rem;
+    box-shadow: none;
+    width: 475px;
+    background-image: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(77, 199, 255);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+}
+
+.cards5::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: rgb(0, 150, 220);
+    border-radius: 50%;
+    top: -110px;
+    right: 0px;
+    opacity: 0.5;
+}
+
+.cards5::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgb(0, 150, 220);
+    border-radius: 50%;
+    top: -120px;
+    right: -120px;
+}
+
+.icon5 {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(0, 150, 220);
+    border-radius: 15px;
+}
+
+.cards6 {
+    margin-right: 1.5rem;
+    transition: box-shadow 300ms cubic-bezier(0.5, 0, 0.2, 1) 0ms;
+    box-shadow: none;
+    width: 475px;
+    background-image: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(111, 255, 166);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+}
+
+.cards6::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: rgb(11, 224, 92);
+    border-radius: 50%;
+    top: -110px;
+    right: 0px;
+    opacity: 0.5;
+}
+
+.cards6::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: rgb(11, 224, 92);
+    border-radius: 50%;
+    top: -120px;
+    right: -120px;
+}
+
+.icon6 {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(11, 224, 92);
+    border-radius: 15px;
+}
+
+.flexcards {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.scard1 {  
+    box-shadow: none;
+    background-image: none;
+    width: 450px;
+    border-radius: 8px;
+    border: none rgba(224, 224, 224, 0.596);
+    background-color: rgb(245, 95, 84);
+    color: rgb(227, 242, 253);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.scard1::before { 
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(140.9deg, rgb(245, 29, 13) -14.02%, rgba(144, 202, 249, 0) 97.58%);
+    border-radius: 50%;
+    top: -150px;
+    right: -130px;
+}
+
+.scard1::after {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(210.04deg, rgb(245, 29, 13) -50.94%, rgba(144, 202, 249, 0) 93.49%);
+    border-radius: 50%;
+    top: 10px;
+    right: -150px;   
+}
+.main-title1 {
+    margin: 10px;
+    display: flex;
+    text-wrap:nowrap;
+}
+
+.sicon {
+    margin-left: 20px;
+    margin-top: 8px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(216, 58, 47);
+    border-radius: 15px;
+}
+.stitle {
+    margin-top: 8px;
+    margin-left: 30px;
+}
+.swrap {
+    margin-top: -19px;
+    display: flex;
+    font-weight: 600;
+    margin-left: 8rem;
+}
+.swrap h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.scard2 {  
+    box-shadow: none;
+    background-image: none;
+    width: 450px;
+    border-radius: 8px;
+    border: none rgba(224, 224, 224, 0.596);
+    background-color: rgb(0, 200, 83);
+    color: rgb(227, 242, 253);
+    overflow: hidden;
+    position: relative;
+
+}
+
+.scard2::before { 
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(140.9deg, rgb(3, 151, 65) -14.02%, rgba(144, 202, 249, 0) 97.58%);
+    border-radius: 50%;
+    top: -150px;
+    right: -130px;
+}
+
+.scard2::after {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(210.04deg, rgb(3, 151, 65) -50.94%, rgba(144, 202, 249, 0) 93.49%);
+    border-radius: 50%;
+    top: 10px;
+    right: -150px;   
+}
+
+.sicon1 {
+    margin-left: 20px;
+    margin-top: 8px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(3, 151, 65);
+    border-radius: 15px;
+}
+
+/* ######################### Column Graph ###################### */
+
+.chart-cover {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* ######################### */
+.chart-top {
+    border-radius: 10px;
+    padding: 15px 15px;
+    margin-right: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+}
+
+.chart-title {
+    align-items: center;
+    text-align: center;
+}
+
+.chart-title h2 {
+    font-weight: 700;
+    font-size: 35px;
+    margin-left: 150px;
+}
+
+.sel-opt {
+    display: flex;
+}
+
+.sel-opt {
+    color: black;
+}
+
+.sel-opt select {
+    padding: 13px 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.4375em;
+    font-family: Roboto, sans-serif;
+    color: rgb(54, 65, 82);
+    box-sizing: border-box;
+    cursor: text;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    background: rgb(248, 250, 252);
+    border-radius: 8px;
+}
+/* #################### Pie Chart ############################# */
+.chart-today {
+    height: 490px;
+    border-radius: 10px;
+    padding: 15px 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+}
+
+.piechart-title1 h2{ 
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+
+/* ####################### Table ############################ */
+.tday-table{
+    border-radius: 10px;
+    margin-left: 25px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+    height: 140px;
+}
+.tday-table table {
+    border-radius: 20px;
+    width: 940px;
+
+}
+.tday-table td {
+    height: 70px;
+    border-right: 1px solid black;
+}
+.tday-table td:nth-child(6){
+    border: none;
+    border-bottom-right-radius: 10px;
+}
+.tday-table td:nth-child(1){
+    border-bottom-left-radius: 10px;
+}
+.tday-table th{
+   height: 70px;
+}
+.tday-table th {
+    font-size: 2rem;
+    color: #ffffff;
+    border-bottom: 1px solid black;
+    text-align: center;
+} 
+
+.tday-table th:first-child{
+    border-top-left-radius: 5px;
+    background-color: #7E57C2;
+}
+.tday-table th:nth-child(2){
+    background-color: #409AE9;
+}
+
+.tday-table th:nth-child(3){
+    background-color: #F55F54;
+}
+.tday-table th:nth-child(4){
+    background-color: #00C853;
+}
+.tday-table th:nth-child(5){
+    background-color: #4DC7FF;
+}
+.tday-table th:nth-child(6){
+    border-top-right-radius: 5px;
+    background-color: #3DEF81;
+}
+.tday-table tr td {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* ################# Scrollbar ######################## */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(146, 146, 146, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(123, 123, 123, 0.4); 
+}

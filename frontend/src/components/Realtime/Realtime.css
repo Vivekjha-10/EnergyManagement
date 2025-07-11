@@ -1,0 +1,194 @@
+section{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin-top: 90px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.containe{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+}
+.cards{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content:space-around;
+}
+
+.containe h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+.rcard{
+    /* flex: 0 0 calc(34.33% - 20px);
+    max-width: calc(40.33% - 20px); */
+    flex-basis: calc(33.33% - 20px);
+    max-width: calc(40.33% - 20px);
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    transition: .3s;
+    border: 2px solid transparent;                                                                                                                                                       
+}
+.rcard h3 {
+  flex-wrap: nowrap;
+  flex-direction: row;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.rcard .right{
+    float: right;
+}
+
+.rcard p{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.rcard:hover{
+    border-color: #1d39c4;
+}
+.buttn{
+    border: none;
+    outline: none;
+    background: #1d39c4;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 120px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.graph_containers{
+    margin-top: 200px;
+}
+
+.buttns{
+    border: none;
+    outline: none;
+    background: #1d39c4;
+    color: #fff;
+    border-radius: 10px;
+    max-width: 120px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.buttn p, .buttns p {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.buttn:hover, .buttns:hover{
+    background: transparent;
+    color: #1d39c4;
+    border:  1px solid #1d39c4;
+}
+
+/* ########### gaug  ############# */
+/* .gaug{
+    margin-left: 30px;
+}
+
+.gaug .gaug-name{
+    position: absolute;
+    margin-left: 129px;
+    font-weight: 700;
+    margin-top: -53px;
+    color: rgb(0, 0, 0);
+}
+Outer-ring
+.chart_div circle:nth-child(1) {
+    opacity: 0.7;
+    stroke-width: 5;
+    stroke: #999;
+    fill: #bbb;
+  }
+  
+  Main background
+  .chart_div circle:nth-child(2) {
+    fill: rgba(130, 205, 246);
+    stroke: #ddd;
+    stroke-width: 5;
+  }
+  
+  Circle of the pointer
+  .chart_div circle:nth-child(3) {
+    fill: pink;
+    stroke: white;
+    stroke-width: 6px;
+  }
+  
+  Main text of the gauge
+  .chart_div text {
+    fill: rgb(0, 102, 255);
+    font-family: 'Comfortaa';
+  }
+  
+  Current value text
+  .chart_div text:nth-child(1) {
+    fill: white;
+    font-size: 33;
+    font-weight: 700;
+    font-family: 'Orbitron';
+  }
+  
+  Ticks
+  .chart_div path {
+    stroke: white;
+  }
+  
+  Circle
+  .chart_div path:nth-child(2) {
+    fill: #FC6C05;
+    stroke: white;
+    stroke-width: 2px;
+    fill-opacity: 1;
+  }
+  
+  Warning area
+  .chart_div path:nth-child(3) {
+    fill: lightgreen;
+  }
+  
+  Danger area
+  .chart_div path:nth-child(4) {
+    fill: darkgreen;
+  } */
+
+  .rmeter{
+    margin-bottom: 20px;
+  }
+
+  .rgraph-name{
+    margin-left: 159px;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    margin-top: -20px;
+  }
+
+  .rmeter svg g .value-text text{
+    font-size: 15px;
+  }

@@ -1,0 +1,428 @@
+.sigin {
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.brand {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #266fd9;
+}
+
+.swal2-success-line-tip, .swal2-success-line-long {
+    font-size: 16px !important;
+  }
+
+.navbar-brand i {
+    font-size: 1.8rem;
+    margin-right: .4rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+.sign-in-container h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.form-container h6 {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.unim p, .up p {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 3px;
+}
+
+
+.form-container button, .up button {
+    border-radius: 20px;
+    border: 1px solid #f8f4f3;
+    background-color: #0d0f15;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    margin-top: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.form-container button:active, .up button:active {
+    transform: scale(0.95);
+}
+
+.form-container button:hover, .up button:hover  {
+    background-color: #547df6;
+    transition: all ease 0.3s;
+}
+
+.form-container button:focus, .up button:focus {
+    outline: none;
+}
+
+.up button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+.form-container form {
+    background-color: #CBDFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.form-container input {
+    background-color: #eee;
+    border: none;
+    border-radius: .3rem;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    -webkit-box-shadow: 4px 3px 11px 0px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 4px 3px 11px 0px rgba(0, 0, 0, 0.62);
+    box-shadow: 4px 3px 11px 0px rgba(0, 0, 0, 0.62);
+}
+
+.up {
+    margin-bottom: -35px;
+}
+
+.logo {
+    margin-top: 5rem;
+
+}
+.uni{
+display: inline-flex;
+margin-bottom: 10px;
+}
+.unim p{
+    background: -webkit-linear-gradient(#5050e9, #f061f7);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: -16px;
+    margin-left: 75px;
+    font-style: oblique;
+}
+
+.unim img {
+    margin-top: 20px;
+    width: 50px;
+    height: 65px;
+}
+.uniname {
+    color: #2e00ffc2;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.uniname h2{
+    font-weight: 700;
+}
+ .uniname h5{
+    margin-left: -5px;
+    margin-top: -15px;
+ }
+
+.container {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+
+}
+.mobile{
+    display: none;
+    margin-top: -2px;
+    margin-left: 15rem;
+    background:none;
+    border:none;
+    color: #0d0f15;
+    padding:0;
+    cursor: pointer;
+    
+}
+.mobile:hover{
+    background-color: unset !important;
+    color: red !important;    }
+
+
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+@keyframes show {
+
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.overlay {
+    background: linear-gradient(to right, #2496ff, #f96ffb,#2496ff);
+    background: linear-gradient(to left,  #f96ffb, #2496ff, #f96ffb);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+
+.sig-container button {
+    margin: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 3em;
+    padding: 0.5em 2em;
+    transition: transform 80ms ease-in;
+    cursor: pointer;
+}
+
+.form-container button:active, .up button:active {
+    transform: scale(0.95);
+}
+
+.form-container input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    min-height: 580px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em auto;
+    align-items: center;
+}
+
+.container__form {
+    padding: 4rem;
+    overflow: hidden;
+}
+
+.container__form--one {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+}
+
+.container__form--two {
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+
+.overlay {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .sigin{
+        margin-top: 10rem;
+    }
+
+    .container{
+        width: 65%;
+        max-height: 550px;
+    }
+
+    .mobile{
+        display: block;
+        text-wrap: nowrap; 
+    }
+    
+}
+
+@media (min-width: 396px) and (max-width: 900px) {
+
+    .sigin{
+        margin-top: 10rem;
+    }
+    .overlay-container {
+        display: none;
+    }
+
+    .container{
+        max-width: 95%;
+        max-height: 350px;
+    }
+  
+    .sign-in-container {   
+        width: 100%;
+    }
+    .mobile{
+        display: block;
+        text-wrap: nowrap; 
+    }
+    .sign-up-container {
+        display: block;
+        width: 100%;
+        opacity: 1;
+    }
+    .signUp-none, .signIn-none{
+        display: none;
+    }
+  }

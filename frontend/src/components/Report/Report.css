@@ -1,0 +1,39 @@
+ .maincontent {
+        display: block;
+    }
+
+   .datepicker {
+        margin: 7rem 0rem 0rem 2rem;
+        display: flex;
+    }
+ 
+    .datepicker .from {
+        font-size: 1.7rem;
+        display: flex;
+    }
+ 
+    .datepicker p {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.53);
+        white-space: nowrap;
+        font-weight: 500;
+    }
+
+    .to {
+        padding-left: 2rem;
+        font-size: 1.7rem;
+        display: flex;
+    }
+
+    .datepicker input {
+        padding: 5px;
+        margin-top: .3rem;
+        margin-left: .5rem;
+        font-weight: 550;
+        font-size: 1rem;
+        height: 2.3rem;
+        border-radius: 6px;
+        border: none;
+        -webkit-box-shadow: 0px 3px 9px 3px rgba(38, 16, 48, 0.74);
+        -moz-box-shadow: 0px 3px 9px 3px rgba(38, 16, 48, 0.74);
+        box-shadow: 0px 3px 9px 3px rgba(38, 16, 48, 0.74);
+    } 

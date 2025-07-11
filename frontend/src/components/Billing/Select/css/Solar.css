@@ -1,0 +1,145 @@
+
+
+/* tg */
+
+.card h2 ,.card1 h2{
+    margin-left: .4rem;
+    font-weight: 600;
+}
+
+.b-wrap{
+    align-items: center;
+    display: flex;
+    margin-left: 8rem;
+    font-weight: 600;
+    
+}
+.b-wrap h3{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+.f-billing{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace; 
+}
+
+.f-billing-4{
+    margin-top: 3rem;
+    justify-content: space-between;
+    font-family: monospace;
+    display: flex;
+  
+}
+
+.sb-card1 {
+    width: 32%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(30, 136, 229);
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    font-family: monospace;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+.sb-card1::before {
+    content: "";
+    position: absolute;
+    width: 198px;
+    height: 210px;
+     background: rgb(21, 101, 192);
+    border-radius: 50%;
+    bottom: -110px;
+    right: -138px;
+    opacity: 0.5;
+}
+
+.sb-card1::after {
+    content: "";
+    position: absolute;
+    width: 235px;
+    height: 250px;
+     background: rgb(21, 101, 192);
+    border-radius: 50%;
+    top: -127px;
+    right: -181px;
+    opacity: 0.5;
+}
+
+
+
+ .b-title h2{
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.b-main-title{
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+
+.b-main-title .b-title{
+    display: flex;
+ }
+ 
+ .b-title .icn{
+     margin-left: 7px;
+
+ }
+
+ 
+ .b-title .mtitle h2{
+    margin-left: 15px;
+    margin-top: 18px;
+    font-size: 25px;
+ } 
+ 
+ 
+ .sb-card1 .b-title{
+     margin-left: -10px;
+     width: 50px;
+     height: 50px;
+     align-items: center;
+     padding: 5px;
+     background-color: rgb(21, 101, 192);
+     border-radius: 15px;
+ }
+
+.pie-chart-billing{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border: 1px solid gray;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.pie-chart-billing {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border: 1px solid gray;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.pie-chart {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border: 1px solid gray;
+    box-shadow: 2px 4px 6px black;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 46%;
+}
