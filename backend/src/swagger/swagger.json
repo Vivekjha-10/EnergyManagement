@@ -1,0 +1,436 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "RBL MOBANK",
+      "description": "NODE.JS API"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:4093/CASAAccounts/api/v1",
+        "description": "Local Server"
+      },
+      {
+        "url": "https://uatsentinel.ratnakarbank.in/CASAAccounts/api/v1",
+        "description": "UAT Server"
+      }
+    ],
+    "paths": {
+      "/getCASAAccounts": {
+        "post": {
+          "summary": "to get CASA Accounts Details",
+          "description": "to get CASA Accounts Details",
+          "tags": ["getCASAAccounts"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "getCASAAccounts": {
+                      "$ref": "#/components/schemas/getCASAAccounts"
+                    }
+                  }
+                }
+              }
+            },
+            "required": true
+          },
+          "responses": {
+            "106": {
+              "description": "Unable to get CASA Accounts Details."
+            },
+            "200": {
+              "description": "Success Response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "properties": {
+                      "getCASAAccounts": {
+                        "$ref": "#/components/schemas/getCASAAccountsResponse"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "408": {
+              "description": "Request Timed Out",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "properties": {
+                      "getCASAAccounts": {
+                        "$ref": "#/components/schemas/getCASAAccountsRequestTimeOut"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "404": {
+              "description": "Not Found."
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "MessageKey": {
+          "type": "object",
+          "properties": {
+            "RequestUUID": { "type": "string", "example": "851090820" },
+            "ServiceRequestId": {
+              "type": "string",
+              "example": "getCASAAccounts"
+            },
+            "ServiceRequestVersion": { "type": "string", "example": "1.0" },
+            "ChannelId": { "type": "string", "example": "MOB" }
+          }
+        },
+        "RequestMessageInfo": {
+          "type": "object",
+          "properties": {
+            "BankId": { "type": "string", "example": "" },
+            "TimeZone": { "type": "string", "example": "" },
+            "MessageDateTime": { "type": "string", "example": "" }
+          }
+        },
+        "Security": {
+          "type": "object",
+          "properties": {
+            "Token": {
+              "type": "object",
+              "properties": {
+                "Certificate": { "type": "string", "example": "" },
+                "MessageHashKey": {
+                  "type": "string",
+                  "example": "8346FE72D39A2F7224F9E2B981AD011A134C0506F11D6E5F69C7627F59F75753"
+                },
+                "MessageIndex": { "type": "string", "example": "" },
+                "PasswordToken": {
+                  "type": "object",
+                  "properties": {
+                    "UserId": { "type": "string", "example": "" },
+                    "Password": { "type": "string", "example": "" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "DeviceInfo": {
+          "type": "object",
+          "properties": {
+            "DeviceFamily": {
+              "type": "string",
+              "example": "samsung"
+            },
+            "DeviceFormat": {
+              "type": "string",
+              "example": "samsung"
+            },
+            "DeviceType": { "type": "string", "example": "Android" },
+            "DeviceName": {
+              "type": "string",
+              "example": "samsung"
+            },
+            "DeviceIMEI": { "type": "string", "example": "" },
+            "DeviceID": {
+              "type": "string",
+              "example": "6c29bb84-f62b-3ad5-9fe5-f9c822731916"
+            },
+            "DeviceVersion": { "type": "string", "example": "9" },
+            "AppVersion": { "type": "string", "example": "8.0.13.23" },
+            "DeviceOS": { "type": "string", "example": "Android" },
+            "DeviceIp": { "type": "string", "example": "192.168.0.105" }
+          }
+        },
+        "AdditionalInfo": {
+          "type": "object",
+          "properties": {
+            "SessionId": {
+              "type": "string",
+              "example": ""
+            },
+            "LanguageId": { "type": "string", "example": "1" },
+            "JourneyId": { "type": "string", "example": "1.2" },
+            "SVersion": { "type": "string", "example": "tt" }
+          }
+        },
+        "Success": {
+          "type": "object",
+          "properties": {
+            "DisplayText": { "type": "string", "example": "Success" },
+            "ErrorCode": { "type": "string", "example": "000" },
+            "ErrorMessage": { "type": "string", "example": "000" },
+            "StatusCode": { "type": "string", "example": "0" }
+          }
+        },
+        "RequestTimeOut": {
+          "type": "object",
+          "properties": {
+            "DisplayText": {
+              "type": "string",
+              "example": "Request Timed Out"
+            },
+            "ErrorCode": {
+              "type": "string",
+              "example": "408"
+            },
+            "ErrorMessage": {
+              "type": "string",
+              "example": "Request Timed Out"
+            },
+            "StatusCode": {
+              "type": "string",
+              "example": "1"
+            }
+          }
+        },
+        "RequestHeader": {
+          "type": "object",
+          "properties": {
+            "MessageKey": { "$ref": "#/components/schemas/MessageKey" },
+            "RequestMessageInfo": {
+              "$ref": "#/components/schemas/RequestMessageInfo"
+            },
+            "Security": { "$ref": "#/components/schemas/Security" },
+            "DeviceInfo": { "$ref": "#/components/schemas/DeviceInfo" },
+            "AdditionalInfo": { "$ref": "#/components/schemas/AdditionalInfo" }
+          }
+        },
+        "RequestBody": {
+          "type": "object",
+          "properties": {
+            "getCASAAccountsRequestBody": {
+              "type": "object",
+              "properties": {
+                "LoginUserID": {
+                  "type": "string",
+                  "required": ["true"],
+                  "example": "1065556"
+                }
+              }
+            }
+          }
+        },
+        "ResponseHeader": {
+          "type": "object",
+          "properties": {
+            "MessageKey": { "$ref": "#/components/schemas/MessageKey" },
+            "RequestMessageInfo": {
+              "$ref": "#/components/schemas/RequestMessageInfo"
+            },
+            "Security": { "$ref": "#/components/schemas/Security" },
+            "DeviceInfo": { "$ref": "#/components/schemas/DeviceInfo" },
+            "AdditionalInfo": { "$ref": "#/components/schemas/AdditionalInfo" }
+          }
+        },
+        "ResponseBody": {
+          "type": "object",
+          "properties": {
+            "getCASAAccountsResponseBody": {
+              "type": "object",
+              "properties": {
+                "CountCASA": {
+                  "type": "string",
+                  "required": ["true"],
+                  "example": "4"
+                },
+                "Accounts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Type": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "Saving"
+                      },
+                      "AccountBalance": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "176.72"
+                      },
+                      "ClearanceBalance": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "0"
+                      },
+                      "Currency": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "INR"
+                      },
+                      "AccountNumber": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "309007847985"
+                      },
+                      "BranchName": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "HAUS KHAS"
+                      },
+                      "BranchCity": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "NEWDE"
+                      },
+                      "IFSCCode": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "RATN0000141"
+                      },
+                      "SchemeCode": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "POFCE"
+                      },
+                      "ODAFlag": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "N"
+                      },
+                      "CustomerName": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "MAHENDRA6758 S DHONI"
+                      },
+                      "IsPISAcct": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "Y"
+                      },
+                      "RelType": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "M"
+                      },
+                      "AcctStatus": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "A"
+                      },
+                      "IsEligibleDoc": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "N"
+                      },
+                      "NREflag": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "Y"
+                      },
+                      "IsSweepInAccount": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "Y"
+                      },
+                      "TXNPermission": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "N"
+                      },
+                      "MOP": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "10"
+                      },
+                      "SweepInId": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "RBP2709872"
+                      },
+                      "ChequeProtectEnable": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "N"
+                      }
+                    }
+                  }
+                },
+                "CountChequeProtect": {
+                  "type": "string",
+                  "required": ["true"],
+                  "example": "2"
+                },
+                "ChequeProtectAccountsDetails": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "ChequeProtectAccountNumber": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "Saving"
+                      },
+                      "ChequeProtectBalanceCurrency": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "Y"
+                      },
+                      "ChequeProtectAvailableBalance": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "N"
+                      },
+                      "ChequeProtectEffectiveBalance": {
+                        "type": "string",
+                        "required": ["true"],
+                        "example": "Y"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "getCASAAccounts": {
+          "type": "object",
+          "properties": {
+            "RequestHeader": { "$ref": "#/components/schemas/RequestHeader" },
+            "RequestBody": { "$ref": "#/components/schemas/RequestBody" }
+          }
+        },
+        "getCASAAccountsResponse": {
+          "type": "object",
+          "properties": {
+            "ResponseHeader": { "$ref": "#/components/schemas/ResponseHeader" },
+            "ResponseBody": { "$ref": "#/components/schemas/ResponseBody" },
+            "Status": { "$ref": "#/components/schemas/Success" }
+          }
+        },
+        "getCASAAccountsRequestTimeOut": {
+          "type": "object",
+          "properties": {
+            "ResponseHeader": {
+              "$ref": "#/components/schemas/ResponseHeader"
+            },
+            "Status": {
+              "$ref": "#/components/schemas/RequestTimeOut"
+            }
+          }
+        }
+      }
+    },
+    "tags": [
+      {
+        "name": "Introduction",
+        "x-displayName": "Introduction",
+        "description": "This API is developed to get CASA Accounts Details"
+      },
+      {
+        "name": "Access Requirements",
+        "x-displayName": "Access Requirements",
+        "description": "NA"
+      },
+      {
+        "name": "Errors",
+        "x-displayName": "Errors",
+        "description": "| Error code | Error Description| Comments|\n| ---------- |------------------|---------|\n| 106 | Unable to get CASA Accounts Details | Unable to get CASA Accounts Details | \n| 008 | technical issue | Due to technical issue we are unable to process your request at this time. Please try again after sometime. | \n| 010       | Invalid input| Invalid input provided in request..|\n| 408 |Request Timed Out|Request Timed Out|\n|"
+      }
+    ]
+  }

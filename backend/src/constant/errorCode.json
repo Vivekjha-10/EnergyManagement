@@ -1,0 +1,199 @@
+{
+  "000": {
+    "errorCode": "000",
+    "errorMsg": "Success",
+    "errorType": "B"
+  },
+  "001": {
+    "errorCode": "001",
+    "errorMsg": "Database Exception",
+    "errorType": "T"
+  },
+  "408": {
+    "errorCode": "408",
+    "errorMsg": "Request Timed Out",
+    "errorType": "T"
+  },
+  "002": {
+    "errorCode": "002",
+    "errorMsg": "No data found",
+    "errorType": "T"
+  },
+  "003": {
+    "errorCode": "003",
+    "errorMsg": "Improper Response",
+    "errorType": "T"
+  },
+  "005": {
+    "errorCode": "005",
+    "errorMsg": "Fullname or Email Id is Missing",
+    "errorType": "B"
+  },
+  "006": {
+    "errorCode": "006",
+    "errorMsg": "Invalid Email Id provided",
+    "errorType": "B"
+  },
+  "007": {
+    "errorCode": "007",
+    "errorMsg": "Password is missing",
+    "errorType": "B"
+  },
+  "008": {
+    "errorCode": "008",
+    "errorMsg": "No data available",
+    "errorType": "B"
+  },
+  "009": {
+    "errorCode": "009",
+    "errorMsg": "Unable to process your request, please try again",
+    "errorType": "B"
+  },
+  "010": {
+    "errorCode": "010",
+    "errorMsg": "This email is already assigned to another user",
+    "errorType": "B"
+  },
+  "011": {
+    "errorCode": "011",
+    "errorMsg": "Unable to fetch or submit from database",
+    "errorType": "B"
+  },
+  "012": {
+    "errorCode": "012",
+    "errorMsg": "User is not verified. Kindly contact System Admin.",
+    "errorType": "B"
+  },
+  "013": {
+    "errorCode": "013",
+    "errorMsg": "Please contact admin. Your account has been deleted or blocked!",
+    "errorType": "B"
+  },
+  "014": {
+    "errorCode": "014",
+    "errorMsg": "You entered incorrect password",
+    "errorType": "B"
+  },
+  "015": {
+    "errorCode": "015",
+    "errorMsg": "Session expires. Please login againd",
+    "errorType": "B"
+  },
+  "016": {
+    "errorCode": "016",
+    "errorMsg": "Authorization Token Missing",
+    "errorType": "B"
+  },
+  "017": {
+    "errorCode": "017",
+    "errorMsg": "Invaild user...",
+    "errorType": "B"
+  },
+  "018": {
+    "errorCode": "018",
+    "errorMsg": "No data is available for dashboard",
+    "errorType": "B"
+  },
+  "019": {
+    "errorCode": "019",
+    "errorMsg": "No data is available for list of department",
+    "errorType": "B"
+  },
+  "020": {
+    "errorCode": "020",
+    "errorMsg": "Invalid or missing assigned meter parameter",
+    "errorType": "B"
+  },
+  "021": {
+    "errorCode": "021",
+    "errorMsg": "Meter mumber is already assigned to another area",
+    "errorType": "B"
+  },
+  "022": {
+    "errorCode": "022",
+    "errorMsg": "Failed to add assigned meter in database",
+    "errorType": "B"
+  },
+  "023": {
+    "errorCode": "023",
+    "errorMsg": "Invalid or missing cost evaluation parameter",
+    "errorType": "B"
+  },
+  "024": {
+    "errorCode": "024",
+    "errorMsg": "Failed to add cost evalution in database",
+    "errorType": "B"
+  },
+  "025": {
+    "errorCode": "025",
+    "errorMsg": "Unable to find the meter number",
+    "errorType": "B"
+  },
+  "026": {
+    "errorCode": "026",
+    "errorMsg": "No data is available for energy meter",
+    "errorType": "B"
+  },
+  "027": {
+    "errorCode": "027",
+    "errorMsg": "No data is available for assigned meters",
+    "errorType": "B"
+  },
+
+  "999": {
+    "errorCode": "999",
+    "errorMsg": "Something went wrong. Kindly contact System Admin.",
+    "errorType": "T"
+  },
+  "101": {
+    "errorCode": "101",
+    "errorMsg": "Due to technical issue we are unable to process now.",
+    "errorType": "T"
+  },
+
+  "102": {
+    "errorCode": "102",
+    "errorMsg": "No data found ",
+    "errorType": "T"
+  },
+  "103": {
+    "errorCode": "103",
+    "errorMsg": "Database service is not enable",
+    "errorType": "T"
+  },
+  "104": {
+    "errorCode": "104",
+    "errorMsg": "Account does not exist",
+    "errorType": "T"
+  },
+  "105": {
+    "errorCode": "105",
+    "errorMsg": "We were unable to process your request. We regret the inconvenience & request you to please try again later. Thank you.",
+    "errorType": "T"
+  },
+  "106": {
+    "errorCode": "106",
+    "errorMsg": "Due to technical issue we are unable to retrive your NRE Flag.",
+    "errorType": "T"
+  },
+  "107": {
+    "errorCode": "107",
+    "errorMsg": "Due to technical issue we are unable to retrive your ISEligibleDoc Flag.",
+    "errorType": "T"
+  },
+  "108": {
+    "errorCode": "108",
+    "errorMsg": "Due to technical issue we are unable to retrive your SweepIn Accounts.",
+    "errorType": "T"
+  },
+  "109": {
+    "errorCode": "109",
+    "errorMsg": "Due to technical issue we are unable to retrive your PIS Scheme Codes.",
+    "errorType": "T"
+  },
+  "110": {
+    "errorCode": "110",
+    "errorMsg": "Due to technical issue we are unable to retrive your account balance.",
+    "errorType": "T"
+  }
+}
